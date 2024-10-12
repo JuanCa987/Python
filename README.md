@@ -9,3 +9,12 @@ Aprendiendo python full
 
 #Activar el entorno virtual
 """.\venv\Scripts\activate"""
+
+#Instalar las dependencias
+"""pip install -r requirements.txt"""
+
+#Ejecutar el proyecto
+"""python main.py""" 
+
+#Para cerrar el entorno virtual
+"""deactivate"""
