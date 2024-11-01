@@ -1,0 +1,1 @@
+"""exception: decteta si un error ocurre en el programa"""

@@ -11,3 +11,11 @@ try:
         
 except ValueError:
      print("Errrrror")
+
+# return statement: es una declaracion que se ejecutara y devolverara un valor
+
+def  multiplicar(a,b):
+    return a * b
+
+x = multiplicar(2,3)
+print(x)
