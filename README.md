@@ -166,3 +166,45 @@ Con estos pasos básicos, tu proyecto Python tendrá una estructura profesional 
 >[!TIP]
 >diccionario: es un tipo de dato que almacena pares clave-valor, se aprendio sobre diccionarios en el curso de python basico
 
+## 🧱 Programación Orientada a Objetos (POO) en Python
+
+La Programación Orientada a Objetos (POO) es un paradigma de programación que permite estructurar el código en "objetos". Cada objeto representa una entidad con características (atributos) y comportamientos (métodos). La POO en Python nos ayuda a escribir código más organizado, modular y fácil de mantener.
+
+### Conceptos Básicos de POO
+
+1. **Clase:** Es el molde o estructura que define las propiedades y comportamientos que tendrán los objetos. En Python, una clase se define con la palabra clave `class`.
+
+2. **Objeto:** Es una instancia de una clase. Cada objeto creado a partir de una clase tendrá los mismos atributos y métodos, pero sus valores pueden variar.
+
+3. **Atributos:** Son las propiedades o datos que se almacenan en cada objeto. Definen el estado de un objeto.
+
+4. **Métodos:** Son las funciones definidas dentro de una clase, que permiten realizar acciones o modificar el estado de un objeto.
+
+5. **Encapsulamiento:** Es la práctica de ocultar los detalles internos de los objetos, permitiendo que solo se acceda a ellos a través de métodos públicos.
+
+6. **Herencia:** Permite crear nuevas clases basadas en clases existentes, reutilizando y extendiendo sus funcionalidades.
+
+7. **Polimorfismo:** Permite utilizar métodos en diferentes clases con el mismo nombre pero con comportamientos específicos.
+
+### Ejemplo Básico de POO en Python
+
+A continuación, se muestra un ejemplo básico de cómo implementar una clase en Python:
+
+```python
+class Animal:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre  # Atributo de instancia
+        self.edad = edad
+
+    def hablar(self):
+        print("Este animal hace un sonido.")
+
+# Herencia: La clase Perro hereda de la clase Animal
+class Perro(Animal):
+    def hablar(self):
+        print("Guau! Guau!")  # Polimorfismo: redefinimos el método hablar
+
+# Crear una instancia de la clase Perro
+mi_perro = Perro("Fido", 3)
+print(f"Mi perro se llama {mi_perro.nombre} y tiene {mi_perro.edad} años.")
+mi_perro.hablar()  # Llamada al método polimórfico
